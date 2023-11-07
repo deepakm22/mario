@@ -1,0 +1,51 @@
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .con1{
+            background-color: aquamarine;
+            height: 450px;
+        }
+        .con2{
+            background-color: green;
+            height: 270px;
+        }
+        .con3{
+            background-color: gray;
+            height: 280px;
+        }
+        .con3 p{
+            color: white;
+            size: 40px;
+        }
+    
+        @keyframes drive {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(2500px);
+  }
+}
+        .two{
+            position: absolute;
+            animation: drive 4s ease-in infinite forwards, jump 0.5s 2s;
+        }
+        .one{
+            position: absolute;
+            animation: drive 5s ease-in infinite forwards, jump 0.5s 2s;
+        }
+        @keyframes cloud {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(2000px);
+  }
+}
+    .cloud{
+        position: absolute;
+        animation: cloud 5s ease-in infinite forwards, jump 0.5s 2s;
+        }
